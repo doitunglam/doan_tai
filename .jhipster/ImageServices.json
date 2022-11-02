@@ -1,0 +1,23 @@
+{
+  "changelogDate": "20220925073113",
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "linkimage",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "ImageServices",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "services",
+      "relationshipName": "services",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

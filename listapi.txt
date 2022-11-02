@@ -1,0 +1,24 @@
+- phân quyền cho các đối tượng
+- đăng ký user
+- đăng ký đối tác
+- quên password
+- đổi password
+- đăng ký nhà hàng
+- admin xác nhận đki nhà hàng
+- đăng ký, cập nhật, xóa, tìm kiếm dịch vụ của nhà hàng
+- lấy các dịch vụ của 1 nhà hàng
+- đăng ký khách sạn(hotel)
+- admin xác nhận đki khách sạn
+- chi tiết 1 khách sạn
+- thêm loại phòng cho 1 khách sạn(mỗi khách sạn có nhiều loại phòng riêng)
+- xóa loại phòng
+- thêm phòng cho khách sạn
+- cập nhật phòng khách sạn
+- xóa phòng khách sạn
+- thêm giá cho phòng khách sạn
+- upload ảnh(trả ra 1 url, lấy url này để save vào database)
+- thêm ảnh cho phòng khách sạn
+- thêm ảnh cho dịch vụ
+
+/***--------------- USER -----------------------
+- user đặt dịch vụ(tạo hóa đơn, chi tiết hóa đơn)

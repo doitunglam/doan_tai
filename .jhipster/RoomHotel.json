@@ -1,0 +1,37 @@
+{
+  "changelogDate": "20220925085836",
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "roomName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomStatus",
+      "fieldType": "Integer"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "RoomHotel",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "typeRoom",
+      "relationshipName": "typeRoom",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "imageRoom",
+      "otherEntityRelationshipName": "roomHotel",
+      "relationshipName": "imageRoom",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

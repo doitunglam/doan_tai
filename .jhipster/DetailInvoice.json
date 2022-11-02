@@ -1,0 +1,33 @@
+{
+  "changelogDate": "20220925075944",
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "quantity",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Double"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "DetailInvoice",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "invoice",
+      "relationshipName": "invoice",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "services",
+      "relationshipName": "services",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

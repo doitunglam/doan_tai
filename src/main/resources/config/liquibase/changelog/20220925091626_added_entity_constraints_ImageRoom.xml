@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity ImageRoom.
+    -->
+    <changeSet id="20220925091626-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="room_hotel_id"
+                                 baseTableName="image_room"
+                                 constraintName="fk_image_room__room_hotel_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="room_hotel"/>
+    </changeSet>
+</databaseChangeLog>

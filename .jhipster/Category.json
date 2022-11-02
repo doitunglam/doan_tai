@@ -1,0 +1,23 @@
+{
+  "changelogDate": "20220925073731",
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "categoryName",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Category",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "services",
+      "otherEntityRelationshipName": "category",
+      "relationshipName": "services",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

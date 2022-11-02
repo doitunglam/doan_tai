@@ -1,0 +1,29 @@
+{
+  "changelogDate": "20220925091448",
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "price",
+      "fieldType": "Double"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "DetailInvoiceRoom",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "priceRoom",
+      "relationshipName": "priceRoom",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "invoice",
+      "relationshipName": "invoice",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,23 @@
+{
+  "changelogDate": "20220925090124",
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "typeName",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "TypeRoom",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "hotel",
+      "relationshipName": "hotel",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

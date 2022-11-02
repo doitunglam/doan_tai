@@ -1,0 +1,49 @@
+{
+  "changelogDate": "20220925070731",
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "resName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String",
+      "fieldValidateRules": ["unique", "maxlength"],
+      "fieldValidateRulesMaxlength": "12"
+    },
+    {
+      "fieldName": "token",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "linkweb",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Restaurant",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "restaurant",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "services",
+      "otherEntityRelationshipName": "restaurant",
+      "relationshipName": "services",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,23 @@
+{
+  "changelogDate": "20220925091626",
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "linkImage",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "ImageRoom",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "roomHotel",
+      "relationshipName": "roomHotel",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}
